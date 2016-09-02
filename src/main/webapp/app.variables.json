@@ -230,9 +230,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Department",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -255,7 +253,7 @@
         "isPrimaryKey" : true,
         "notNull" : true,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "identity",
         "isRelated" : false,
         "scale" : 0
@@ -267,7 +265,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -278,7 +277,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -289,7 +289,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -300,7 +301,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -311,7 +313,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -322,7 +325,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -333,7 +337,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 20,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -344,7 +349,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -355,7 +361,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       } ],
@@ -379,9 +386,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Employee",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -397,19 +402,20 @@
     "matchMode" : "start",
     "propertiesMap" : {
       "columns" : [ {
-        "fieldName" : "EMPLOYEE_1",
+        "fieldName" : "department",
         "type" : "integer",
         "fullyQualifiedType" : "integer",
         "columnName" : "DEPTID",
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "assigned",
         "isRelated" : true,
         "relatedTableName" : "DEPARTMENT",
         "relatedEntityName" : "Department",
-        "relatedFieldName" : "EMPLOYEE_1.deptid",
+        "relatedColumnName" : "deptid",
+        "relatedFieldName" : "department.deptid",
         "isList" : false,
         "targetTable" : "DEPARTMENT",
         "scale" : 0,
@@ -421,7 +427,7 @@
           "isPrimaryKey" : true,
           "notNull" : true,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
           "generator" : "identity",
           "isRelated" : false,
           "scale" : 0
@@ -433,7 +439,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -444,7 +451,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -455,7 +463,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -466,7 +475,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -477,7 +487,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -488,7 +499,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -499,7 +511,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 20,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -510,7 +523,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -521,40 +535,44 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         } ]
       }, {
-        "fieldName" : "EMPLOYEE_2",
+        "fieldName" : "employeeByManagerid",
         "type" : "integer",
         "fullyQualifiedType" : "integer",
         "columnName" : "MANAGERID",
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : true,
         "relatedTableName" : "EMPLOYEE",
         "relatedEntityName" : "Employee",
-        "relatedFieldName" : "EMPLOYEE_2.eid",
+        "relatedColumnName" : "managerid",
+        "relatedFieldName" : "employeeByManagerid.eid",
         "isList" : false,
         "targetTable" : "EMPLOYEE",
         "scale" : 0,
         "columns" : [ {
-          "fieldName" : "EMPLOYEE_1",
+          "fieldName" : "department",
           "type" : "integer",
           "fullyQualifiedType" : "integer",
           "columnName" : "DEPTID",
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
           "relatedTableName" : "DEPARTMENT",
           "relatedEntityName" : "Department",
-          "relatedFieldName" : "EMPLOYEE_1.deptid",
+          "relatedColumnName" : "deptid",
+          "relatedFieldName" : "department.deptid",
           "isList" : false,
           "targetTable" : "DEPARTMENT",
           "scale" : 0,
@@ -566,7 +584,7 @@
             "isPrimaryKey" : true,
             "notNull" : true,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
             "generator" : "identity",
             "isRelated" : false,
             "scale" : 0
@@ -578,7 +596,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 0,
+            "precision" : 19,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -589,7 +608,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -600,7 +620,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -611,7 +632,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -622,7 +644,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -633,7 +656,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -644,7 +668,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 20,
-            "precision" : 0,
+            "precision" : 19,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -655,7 +680,8 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 0,
+            "precision" : 19,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           }, {
@@ -666,22 +692,25 @@
             "isPrimaryKey" : false,
             "notNull" : false,
             "length" : 255,
-            "precision" : 19,
+            "precision" : 10,
+            "generator" : "assigned",
             "isRelated" : false,
             "scale" : 0
           } ]
         }, {
-          "fieldName" : "EMPLOYEE_2",
+          "fieldName" : "employeeByManagerid",
           "type" : "integer",
           "fullyQualifiedType" : "integer",
           "columnName" : "MANAGERID",
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : true,
           "relatedTableName" : "EMPLOYEE",
           "relatedEntityName" : "Employee",
+          "relatedColumnName" : "managerid",
           "targetTable" : "EMPLOYEE",
           "scale" : 0
         }, {
@@ -692,7 +721,7 @@
           "isPrimaryKey" : true,
           "notNull" : true,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
           "generator" : "identity",
           "isRelated" : false,
           "scale" : 0
@@ -704,7 +733,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -715,7 +745,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -726,7 +757,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -737,7 +769,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -748,7 +781,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 2,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -759,7 +793,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -770,7 +805,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 10,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -781,7 +817,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -792,7 +829,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 40,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -803,7 +841,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         } ]
@@ -815,7 +854,7 @@
         "isPrimaryKey" : true,
         "notNull" : true,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "identity",
         "isRelated" : false,
         "scale" : 0
@@ -827,7 +866,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -838,7 +878,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -849,7 +890,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -860,7 +902,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -871,7 +914,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 2,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -882,7 +926,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -893,7 +938,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 10,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -904,7 +950,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -915,7 +962,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 40,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -926,7 +974,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       } ],
@@ -939,16 +988,16 @@
     "bindCount" : 6,
     "tableName" : "EMPLOYEE",
     "tableType" : "TABLE",
-    "properties" : [ "EMPLOYEE_1", "EMPLOYEE_2" ],
+    "properties" : [ "department", "employeeByManagerid" ],
     "relatedTables" : [ {
-      "columnName" : "EMPLOYEE_1",
-      "relationName" : "EMPLOYEE_1",
+      "columnName" : "department",
+      "relationName" : "department",
       "type" : "Department",
       "watchOn" : "HrdbDepartmentData",
       "package" : "com.hrdb.Employee"
     }, {
-      "columnName" : "EMPLOYEE_2",
-      "relationName" : "EMPLOYEE_2",
+      "columnName" : "employeeByManagerid",
+      "relationName" : "employeeByManagerid",
       "type" : "Employee",
       "watchOn" : "HrdbEmployeeData",
       "package" : "com.hrdb.Employee"
@@ -989,9 +1038,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "User",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1014,7 +1061,7 @@
         "isPrimaryKey" : true,
         "notNull" : true,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "identity",
         "isRelated" : false,
         "scale" : 0
@@ -1026,7 +1073,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 20,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -1037,7 +1085,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 20,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -1048,7 +1097,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 20,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -1059,7 +1109,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       } ],
@@ -1082,9 +1133,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Vacation",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1100,45 +1149,49 @@
     "matchMode" : "start",
     "propertiesMap" : {
       "columns" : [ {
-        "fieldName" : "VACATION_1",
+        "fieldName" : "employee",
         "type" : "integer",
         "fullyQualifiedType" : "integer",
         "columnName" : "EMPID",
         "isPrimaryKey" : false,
         "notNull" : true,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "assigned",
         "isRelated" : true,
         "relatedTableName" : "EMPLOYEE",
         "relatedEntityName" : "Employee",
-        "relatedFieldName" : "VACATION_1.eid",
+        "relatedColumnName" : "empid",
+        "relatedFieldName" : "employee.eid",
         "isList" : false,
         "targetTable" : "EMPLOYEE",
         "scale" : 0,
         "columns" : [ {
-          "fieldName" : "EMPLOYEE_1",
+          "fieldName" : "department",
           "type" : "integer",
           "fullyQualifiedType" : "integer",
           "columnName" : "DEPTID",
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "deptid",
           "targetTable" : "DEPARTMENT",
           "scale" : 0
         }, {
-          "fieldName" : "EMPLOYEE_2",
+          "fieldName" : "employeeByManagerid",
           "type" : "integer",
           "fullyQualifiedType" : "integer",
           "columnName" : "MANAGERID",
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "managerid",
           "targetTable" : "EMPLOYEE",
           "scale" : 0
         }, {
@@ -1149,7 +1202,7 @@
           "isPrimaryKey" : true,
           "notNull" : true,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
           "generator" : "identity",
           "isRelated" : false,
           "scale" : 0
@@ -1161,7 +1214,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1172,7 +1226,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1183,7 +1238,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1194,7 +1250,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1205,7 +1262,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 2,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1216,7 +1274,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1227,7 +1286,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 10,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1238,7 +1298,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1249,7 +1310,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 40,
-          "precision" : 0,
+          "precision" : 19,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         }, {
@@ -1260,7 +1322,8 @@
           "isPrimaryKey" : false,
           "notNull" : false,
           "length" : 255,
-          "precision" : 19,
+          "precision" : 10,
+          "generator" : "assigned",
           "isRelated" : false,
           "scale" : 0
         } ]
@@ -1272,7 +1335,7 @@
         "isPrimaryKey" : true,
         "notNull" : true,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
         "generator" : "identity",
         "isRelated" : false,
         "scale" : 0
@@ -1284,7 +1347,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 10,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -1295,7 +1359,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 10,
-        "precision" : 0,
+        "precision" : 19,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       }, {
@@ -1306,7 +1371,8 @@
         "isPrimaryKey" : false,
         "notNull" : false,
         "length" : 255,
-        "precision" : 19,
+        "precision" : 10,
+        "generator" : "assigned",
         "isRelated" : false,
         "scale" : 0
       } ],
@@ -1318,10 +1384,10 @@
     "isDefault" : true,
     "tableName" : "VACATION",
     "tableType" : "TABLE",
-    "properties" : [ "VACATION_1" ],
+    "properties" : [ "employee" ],
     "relatedTables" : [ {
-      "columnName" : "VACATION_1",
-      "relationName" : "VACATION_1",
+      "columnName" : "employee",
+      "relationName" : "employee",
       "type" : "Employee",
       "watchOn" : "HrdbEmployeeData",
       "package" : "com.hrdb.Vacation"
@@ -1487,9 +1553,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Customers",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1517,6 +1581,7 @@
         "isRelated" : true,
         "relatedTableName" : "STATES",
         "relatedEntityName" : "States",
+        "relatedColumnName" : "stateId",
         "relatedFieldName" : "states.id",
         "isList" : false,
         "targetTable" : "STATES",
@@ -1610,9 +1675,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "FollowUps",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1640,6 +1703,7 @@
         "isRelated" : true,
         "relatedTableName" : "QUOTES",
         "relatedEntityName" : "Quotes",
+        "relatedColumnName" : "quoteId",
         "relatedFieldName" : "quotes.id",
         "isList" : false,
         "targetTable" : "QUOTES",
@@ -1655,6 +1719,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "repId",
           "targetTable" : "REPS",
           "scale" : 0
         }, {
@@ -1668,6 +1733,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "leadId",
           "targetTable" : "LEADS",
           "scale" : 0
         }, {
@@ -1758,9 +1824,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Leads",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1788,6 +1852,7 @@
         "isRelated" : true,
         "relatedTableName" : "CUSTOMERS",
         "relatedEntityName" : "Customers",
+        "relatedColumnName" : "customerId",
         "relatedFieldName" : "customers.id",
         "isList" : false,
         "targetTable" : "CUSTOMERS",
@@ -1803,6 +1868,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "stateId",
           "targetTable" : "STATES",
           "scale" : 0
         }, {
@@ -1944,9 +2010,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Quotes",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -1974,6 +2038,7 @@
         "isRelated" : true,
         "relatedTableName" : "REPS",
         "relatedEntityName" : "Reps",
+        "relatedColumnName" : "repId",
         "relatedFieldName" : "reps.id",
         "isList" : false,
         "targetTable" : "REPS",
@@ -1989,6 +2054,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "channelType",
           "targetTable" : "CHANNELS",
           "scale" : 0
         }, {
@@ -2113,6 +2179,7 @@
         "isRelated" : true,
         "relatedTableName" : "LEADS",
         "relatedEntityName" : "Leads",
+        "relatedColumnName" : "leadId",
         "relatedFieldName" : "leads.id",
         "isList" : false,
         "targetTable" : "LEADS",
@@ -2128,6 +2195,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "customerId",
           "targetTable" : "CUSTOMERS",
           "scale" : 0
         }, {
@@ -2224,9 +2292,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Reps",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -2254,6 +2320,7 @@
         "isRelated" : true,
         "relatedTableName" : "CHANNELS",
         "relatedEntityName" : "Channels",
+        "relatedColumnName" : "channelType",
         "relatedFieldName" : "channels.id",
         "isList" : false,
         "targetTable" : "CHANNELS",
@@ -2419,9 +2486,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Sales",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -2449,6 +2514,7 @@
         "isRelated" : true,
         "relatedTableName" : "PRODUCTS",
         "relatedEntityName" : "Products",
+        "relatedColumnName" : "productId",
         "relatedFieldName" : "products.id",
         "isList" : false,
         "targetTable" : "PRODUCTS",
@@ -2491,6 +2557,7 @@
         "isRelated" : true,
         "relatedTableName" : "QUOTES",
         "relatedEntityName" : "Quotes",
+        "relatedColumnName" : "quoteId",
         "relatedFieldName" : "quotes.id",
         "isList" : false,
         "targetTable" : "QUOTES",
@@ -2506,6 +2573,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "repId",
           "targetTable" : "REPS",
           "scale" : 0
         }, {
@@ -2519,6 +2587,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "leadId",
           "targetTable" : "LEADS",
           "scale" : 0
         }, {
@@ -2713,9 +2782,7 @@
     "category" : "wm.LiveVariable",
     "dataBinding" : [ ],
     "operation" : "read",
-    "dataSet" : {
-      "dataValue" : ""
-    },
+    "dataSet" : [ ],
     "type" : "Tasks",
     "isList" : true,
     "saveInPhonegap" : false,
@@ -2743,6 +2810,7 @@
         "isRelated" : true,
         "relatedTableName" : "REPS",
         "relatedEntityName" : "Reps",
+        "relatedColumnName" : "repId",
         "relatedFieldName" : "reps.id",
         "isList" : false,
         "targetTable" : "REPS",
@@ -2758,6 +2826,7 @@
           "precision" : 10,
           "generator" : "assigned",
           "isRelated" : true,
+          "relatedColumnName" : "channelType",
           "targetTable" : "CHANNELS",
           "scale" : 0
         }, {

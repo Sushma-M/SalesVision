@@ -19,10 +19,10 @@
   "maxPageSize" : 100,
   "dataSourceType" : "WM_MANAGED_DATASOURCE",
   "jndiName" : "",
-  "readOnly" : true,
   "reloadInfo" : {
-    "message" : "There are some updates to the generated database APIs which require code regeneration. ",
-    "reason" : "MIGRATION_FAILED",
-    "reload" : true
-  }
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : true
 }
